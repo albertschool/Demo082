@@ -22,7 +22,7 @@ public class SpinDemo extends AppCompatActivity implements AdapterView.OnItemSel
 
     TextView tV;
     Spinner spin;
-    String [] town={"Tel-Aviv","Haife","Jerusalem","Beer-Sheva"};
+    String [] town={"Tel-Aviv","Haifa","Jerusalem","Beer-Sheva"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     TextView tV;
     ListView lV;
-    String [] town={"Tel-Aviv","Haife","Jerusalem","Beer-Sheva"};
+    String [] town={"Tel-Aviv","Haifa","Jerusalem","Beer-Sheva"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
