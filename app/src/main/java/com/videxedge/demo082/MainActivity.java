@@ -39,15 +39,19 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 R.layout.support_simple_spinner_dropdown_item,town);
         lV.setAdapter(adp);
     }
+
 /**
- * onItemClick method: Display on the TextView the position in the adapter &
- * the row id of the data that was pressed
+ * onItemClick method: Display on the TextView the position in the adapter,
+ * the row id of the data that was pressed & the data.
  */
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int pos, long rowid) {
-        tV.setText(""+pos+" "+rowid);
+        tV.setText("position: "+pos+" row id: "+rowid+"\n- "+town[pos]);
     }
 
+/**
+ * next method: Pass to the spinner demo activity
+ */
     public void next(View view) {
         Intent si = new Intent(this,SpinDemo.class);
         startActivity(si);
