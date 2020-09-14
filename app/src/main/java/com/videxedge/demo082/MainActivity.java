@@ -2,6 +2,7 @@ package com.videxedge.demo082;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -9,10 +10,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 /**
- * Demo project for ListView
+ * Demo project for ListView & Spinner
  *
  * @author      Albert Levy <albert.school2015@gmail.com>
- * @version     1.0 (Vasic demo)
+ * @version     2.0 (Basic demo)
  * @since       9/9/2019
  */
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
@@ -45,5 +46,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int pos, long rowid) {
         tV.setText(""+pos+" "+rowid);
+    }
+
+    public void next(View view) {
+        Intent si = new Intent(this,SpinDemo.class);
+        startActivity(si);
     }
 }
